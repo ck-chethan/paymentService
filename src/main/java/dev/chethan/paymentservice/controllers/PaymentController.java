@@ -21,7 +21,7 @@ public class PaymentController {
     }
 
     @PostMapping("/webhook")
-    public void hanleWebhook(@RequestBody String payload) {
+    public void handleWebhook(@RequestBody String payload) {
         // Handle the webhook payload from Razorpay
         // This is where you would process the payment status update
         System.out.println("Webhook received: " + payload);
